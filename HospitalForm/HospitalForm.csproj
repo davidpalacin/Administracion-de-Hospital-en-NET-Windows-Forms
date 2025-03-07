@@ -52,13 +52,44 @@
     <Compile Include="Administracion.Designer.cs">
       <DependentUpon>Administracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doctor.cs" />
-    <Compile Include="Hospital.cs" />
+    <Compile Include="Administrativo.cs" />
+    <Compile Include="Cita.cs" />
+    <Compile Include="FormCrearPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearPaciente.Designer.cs">
+      <DependentUpon>FormCrearPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVerMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerMedicos.Designer.cs">
+      <DependentUpon>FormVerMedicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVerPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerPacientes.Designer.cs">
+      <DependentUpon>FormVerPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion.cs" />
+    <Compile Include="HistorialClinico.cs" />
+    <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administracion.resx">
       <DependentUpon>Administracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearPaciente.resx">
+      <DependentUpon>FormCrearPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVerMedicos.resx">
+      <DependentUpon>FormVerMedicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVerPacientes.resx">
+      <DependentUpon>FormVerPacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -31,6 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnVerPacientes = new System.Windows.Forms.Button();
             this.btnVerDoctores = new System.Windows.Forms.Button();
+            this.btnCrearPaciente = new System.Windows.Forms.Button();
+            this.btnCrearMedico = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,29 +47,50 @@
             // 
             // btnVerPacientes
             // 
-            this.btnVerPacientes.Location = new System.Drawing.Point(120, 130);
+            this.btnVerPacientes.Location = new System.Drawing.Point(18, 69);
             this.btnVerPacientes.Name = "btnVerPacientes";
-            this.btnVerPacientes.Size = new System.Drawing.Size(163, 61);
+            this.btnVerPacientes.Size = new System.Drawing.Size(475, 61);
             this.btnVerPacientes.TabIndex = 1;
-            this.btnVerPacientes.Text = "Ver Pacientes";
+            this.btnVerPacientes.Text = "Pacientes";
             this.btnVerPacientes.UseVisualStyleBackColor = true;
             this.btnVerPacientes.Click += new System.EventHandler(this.btnVerPacientes_Click);
             // 
             // btnVerDoctores
             // 
-            this.btnVerDoctores.Location = new System.Drawing.Point(335, 130);
+            this.btnVerDoctores.Location = new System.Drawing.Point(549, 69);
             this.btnVerDoctores.Name = "btnVerDoctores";
-            this.btnVerDoctores.Size = new System.Drawing.Size(163, 61);
+            this.btnVerDoctores.Size = new System.Drawing.Size(475, 61);
             this.btnVerDoctores.TabIndex = 2;
-            this.btnVerDoctores.Text = "Ver Doctores";
+            this.btnVerDoctores.Text = "Doctores";
             this.btnVerDoctores.UseVisualStyleBackColor = true;
             this.btnVerDoctores.Click += new System.EventHandler(this.btnVerDoctores_Click);
+            // 
+            // btnCrearPaciente
+            // 
+            this.btnCrearPaciente.Location = new System.Drawing.Point(18, 145);
+            this.btnCrearPaciente.Name = "btnCrearPaciente";
+            this.btnCrearPaciente.Size = new System.Drawing.Size(475, 61);
+            this.btnCrearPaciente.TabIndex = 3;
+            this.btnCrearPaciente.Text = "Nuevo Paciente";
+            this.btnCrearPaciente.UseVisualStyleBackColor = true;
+            this.btnCrearPaciente.Click += new System.EventHandler(this.btnCrearPaciente_Click);
+            // 
+            // btnCrearMedico
+            // 
+            this.btnCrearMedico.Location = new System.Drawing.Point(549, 145);
+            this.btnCrearMedico.Name = "btnCrearMedico";
+            this.btnCrearMedico.Size = new System.Drawing.Size(475, 61);
+            this.btnCrearMedico.TabIndex = 4;
+            this.btnCrearMedico.Text = "Nuevo Doctor";
+            this.btnCrearMedico.UseVisualStyleBackColor = true;
             // 
             // Administracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 649);
+            this.Controls.Add(this.btnCrearMedico);
+            this.Controls.Add(this.btnCrearPaciente);
             this.Controls.Add(this.btnVerDoctores);
             this.Controls.Add(this.btnVerPacientes);
             this.Controls.Add(this.label1);
@@ -84,6 +107,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnVerPacientes;
         private System.Windows.Forms.Button btnVerDoctores;
+        private System.Windows.Forms.Button btnCrearPaciente;
+        private System.Windows.Forms.Button btnCrearMedico;
     }
 }
 

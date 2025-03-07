@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HospitalForm
 {
-    class Doctor
+    public abstract class Persona
     {
         public string Nombre { get; set; }
-        public string Apellido { get; set; }
+        public string DNI { get; set; }
     }
 }
