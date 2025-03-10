@@ -37,7 +37,7 @@ namespace HospitalForm
         {
             List<Medico> medicos= gestion.Medicos;
 
-            FormVerMedicos verMedicos = new FormVerMedicos();
+            FormVerMedicos verMedicos = new FormVerMedicos(gestion.Medicos);
             verMedicos.Show();
         }
 
@@ -53,7 +53,20 @@ namespace HospitalForm
                 gestion.Pacientes.Add(crearPaciente.NuevoPaciente);
                 MessageBox.Show("Paciente creado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
 
+        private void btnCrearMedico_Click(object sender, EventArgs e)
+        {
+            // Abrir form para crear nuevo medico
+            FormCrearMedico crearMedico = new FormCrearMedico();
+
+            // Crear el medico cuando hayamos terminado de rellenar los datos
+            if (crearMedico.ShowDialog() == DialogResult.OK)
+            {
+                // Solo se agrega si el usuario ha confirmado la creación
+                gestion.Medicos.Add(crearMedico.NuevoMedico);
+                MessageBox.Show("Paciente creado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

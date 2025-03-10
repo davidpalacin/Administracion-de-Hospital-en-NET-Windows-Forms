@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Administrativo.cs" />
     <Compile Include="Cita.cs" />
+    <Compile Include="FormCrearMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearMedico.Designer.cs">
+      <DependentUpon>FormCrearMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCrearPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administracion.resx">
       <DependentUpon>Administracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearMedico.resx">
+      <DependentUpon>FormCrearMedico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCrearPaciente.resx">
       <DependentUpon>FormCrearPaciente.cs</DependentUpon>

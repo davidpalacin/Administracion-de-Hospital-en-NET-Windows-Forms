@@ -38,5 +38,10 @@ namespace HospitalForm
             dgvPacientes.Columns["TipoEnfermedad"].HeaderCell.Style.Font = new Font("Arial", 10, FontStyle.Bold);
             dgvPacientes.Columns["Curado"].HeaderCell.Style.Font = new Font("Arial", 10, FontStyle.Bold);
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

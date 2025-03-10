@@ -12,15 +12,16 @@ namespace HospitalForm
 {
     public partial class FormVerMedicos: Form
     {
-        static Gestion gestion = new Gestion();
-        public FormVerMedicos()
+        public List<Medico> Medicos { get; set; }
+        public FormVerMedicos(List<Medico> medicos)
         {
             InitializeComponent();
+            Medicos = medicos;
         }
 
         private void FormVerMedicos_Load(object sender, EventArgs e)
         {
-            dgvMedicos.DataSource = gestion.Medicos;
+            dgvMedicos.DataSource = Medicos;
 
             // ordenar columnas, primera columna nombre
             dgvMedicos.Columns["Nombre"].DisplayIndex = 0;
@@ -31,6 +32,11 @@ namespace HospitalForm
             dgvMedicos.Columns["Nombre"].HeaderCell.Style.Font = new Font("Arial", 10, FontStyle.Bold);
             dgvMedicos.Columns["DNI"].HeaderCell.Style.Font = new Font("Arial", 10, FontStyle.Bold);
             dgvMedicos.Columns["Especialidad"].HeaderCell.Style.Font = new Font("Arial", 10, FontStyle.Bold);
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

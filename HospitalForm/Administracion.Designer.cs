@@ -47,6 +47,7 @@
             // 
             // btnVerPacientes
             // 
+            this.btnVerPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerPacientes.Location = new System.Drawing.Point(18, 69);
             this.btnVerPacientes.Name = "btnVerPacientes";
             this.btnVerPacientes.Size = new System.Drawing.Size(475, 61);
@@ -57,6 +58,7 @@
             // 
             // btnVerDoctores
             // 
+            this.btnVerDoctores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerDoctores.Location = new System.Drawing.Point(549, 69);
             this.btnVerDoctores.Name = "btnVerDoctores";
             this.btnVerDoctores.Size = new System.Drawing.Size(475, 61);
@@ -67,6 +69,7 @@
             // 
             // btnCrearPaciente
             // 
+            this.btnCrearPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearPaciente.Location = new System.Drawing.Point(18, 145);
             this.btnCrearPaciente.Name = "btnCrearPaciente";
             this.btnCrearPaciente.Size = new System.Drawing.Size(475, 61);
@@ -77,12 +80,14 @@
             // 
             // btnCrearMedico
             // 
+            this.btnCrearMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearMedico.Location = new System.Drawing.Point(549, 145);
             this.btnCrearMedico.Name = "btnCrearMedico";
             this.btnCrearMedico.Size = new System.Drawing.Size(475, 61);
             this.btnCrearMedico.TabIndex = 4;
             this.btnCrearMedico.Text = "Nuevo Doctor";
             this.btnCrearMedico.UseVisualStyleBackColor = true;
+            this.btnCrearMedico.Click += new System.EventHandler(this.btnCrearMedico_Click);
             // 
             // Administracion
             // 
