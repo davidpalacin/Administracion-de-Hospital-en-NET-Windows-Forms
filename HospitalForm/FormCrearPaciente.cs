@@ -29,7 +29,6 @@ namespace HospitalForm
         private void FormCrearPaciente_Load(object sender, EventArgs e)
         {
             cmbTipoEnfermedad.SelectedText = "--Seleccione--";
-            cmbEstaEnfermo.SelectedText = "--Seleccione--";
             cmbMedicoCabecera.SelectedText = "--Seleccione--";
 
             // Introducir en la lista los médicos de cabecera

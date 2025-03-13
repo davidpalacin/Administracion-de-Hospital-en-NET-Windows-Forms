@@ -34,10 +34,8 @@
             this.txtDNIPaciente = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cmbTipoEnfermedad = new System.Windows.Forms.ComboBox();
-            this.cmbEstaEnfermo = new System.Windows.Forms.ComboBox();
             this.cmbMedicoCabecera = new System.Windows.Forms.ComboBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -71,7 +69,7 @@
             // 
             // txtDNIPaciente
             // 
-            this.txtDNIPaciente.Location = new System.Drawing.Point(266, 93);
+            this.txtDNIPaciente.Location = new System.Drawing.Point(547, 93);
             this.txtDNIPaciente.Name = "txtDNIPaciente";
             this.txtDNIPaciente.Size = new System.Drawing.Size(207, 26);
             this.txtDNIPaciente.TabIndex = 4;
@@ -79,7 +77,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(262, 69);
+            this.label3.Location = new System.Drawing.Point(543, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 20);
             this.label3.TabIndex = 3;
@@ -88,20 +86,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(512, 69);
+            this.label4.Location = new System.Drawing.Point(543, 173);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 20);
             this.label4.TabIndex = 5;
             this.label4.Text = "Tipo de enfermedad";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(765, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(197, 20);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Está actualmente enfermo";
             // 
             // label6
             // 
@@ -127,21 +116,10 @@
             "Urologo",
             "Endocrinologo",
             "Otorrinolaringologo"});
-            this.cmbTipoEnfermedad.Location = new System.Drawing.Point(516, 90);
+            this.cmbTipoEnfermedad.Location = new System.Drawing.Point(547, 194);
             this.cmbTipoEnfermedad.Name = "cmbTipoEnfermedad";
             this.cmbTipoEnfermedad.Size = new System.Drawing.Size(186, 28);
             this.cmbTipoEnfermedad.TabIndex = 9;
-            // 
-            // cmbEstaEnfermo
-            // 
-            this.cmbEstaEnfermo.FormattingEnabled = true;
-            this.cmbEstaEnfermo.Items.AddRange(new object[] {
-            "Sí",
-            "No"});
-            this.cmbEstaEnfermo.Location = new System.Drawing.Point(769, 93);
-            this.cmbEstaEnfermo.Name = "cmbEstaEnfermo";
-            this.cmbEstaEnfermo.Size = new System.Drawing.Size(186, 28);
-            this.cmbEstaEnfermo.TabIndex = 10;
             // 
             // cmbMedicoCabecera
             // 
@@ -182,10 +160,8 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.cmbMedicoCabecera);
-            this.Controls.Add(this.cmbEstaEnfermo);
             this.Controls.Add(this.cmbTipoEnfermedad);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtDNIPaciente);
             this.Controls.Add(this.label3);
@@ -208,10 +184,8 @@
         private System.Windows.Forms.TextBox txtDNIPaciente;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbTipoEnfermedad;
-        private System.Windows.Forms.ComboBox cmbEstaEnfermo;
         private System.Windows.Forms.ComboBox cmbMedicoCabecera;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
